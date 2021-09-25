@@ -1,21 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="kr">
 <head>
     <meta charset="UTF-8">
     <title>To Do List</title>
     <link rel="stylesheet" type="text/css" href="static/css/index.css">
 </head>
-<body>
+<body onload="showClock()">
     <div class="container">
         <div class="intro">
-            <div class="time">
-                <h>00:00</h>
+            <div class="time-box">
+                <h id="time" class="time">00:00</h><br>
+                <h2 class="hello">안녕하세요. 재민님!</h2>
             </div>
-            <div class="hello">
-                hello Jaemin!
+            <div class="todo-box">
+                <h3 class="question">오늘 주요 할일은 무엇인가요?</h3>
+                <input class="input-underline" type="text" name="todo-input" autocomplete="off">
             </div>
-
         </div>
     </div>
+    <script type="text/javascript" src="static/js/index.js"></script>
 </body>
 </html>
