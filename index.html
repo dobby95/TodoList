@@ -5,7 +5,7 @@
     <title>To Do List</title>
     <link rel="stylesheet" type="text/css" href="static/css/index.css">
 </head>
-<body onload="showClock()">
+<body>
     <div class="container">
         <div class="intro">
             <div class="time-box">
@@ -14,7 +14,9 @@
             </div>
             <div class="todo-box">
                 <h3 class="question">오늘 주요 할일은 무엇인가요?</h3>
-                <input class="input-underline" type="text" name="todo-input" autocomplete="off">
+<!--                <form name="form-box" onsubmit="this.action=getTodo()">-->
+                <input class="input-underline" type="text" id="todo-input" name="todo-input" autocomplete="off" onkeyup="entercheck()">
+<!--                </form>-->
             </div>
         </div>
     </div>
